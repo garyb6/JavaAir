@@ -1,4 +1,7 @@
 package staff;
 
-public class RankType {
+public enum RankType {
+    Captain,
+    SeniorCrew,
+    Crew
 }
