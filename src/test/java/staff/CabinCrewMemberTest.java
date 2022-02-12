@@ -22,4 +22,10 @@ public class CabinCrewMemberTest {
     public void hasRank(){
         assertEquals(RankType.SeniorCrew, cabincrewmember.getRank());
     }
+
+    @Test
+    public void canGiveAnnouncement(){
+        assertEquals("Please buy our expensive tat from the trolley", cabincrewmember.giveAnnouncement("expensive tat"));
+
+    }
 }

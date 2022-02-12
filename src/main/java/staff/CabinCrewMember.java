@@ -18,4 +18,7 @@ public class CabinCrewMember {
         return this.rank;
     }
 
+    public String giveAnnouncement(String item) {
+        return String.format("Please buy our %s from the trolley", item);
+    }
 }

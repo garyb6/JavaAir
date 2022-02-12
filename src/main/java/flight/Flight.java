@@ -60,13 +60,15 @@ public class Flight {
         return this.passengerManifesto.size();
     }
 
+    public void addPassenger(Passenger passenger) {
+        this.passengerManifesto.add(passenger);
+    }
+
     public int checkAvailableSeats(Plane plane) {
         return plane.type.capacity - this.passengerManifesto.size();
     }
 
     public void bookPassenger(Passenger passenger, Plane plane) {
-        if (checkAvailableSeats(plane) >= 0) {
-            this.passengerManifesto.add(passenger);
-        }
+        if (checkAvailableSeats(plane) >= 0) this.passengerManifesto.add(passenger);
     }
 }

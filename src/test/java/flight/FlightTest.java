@@ -66,6 +66,13 @@ public class FlightTest {
     }
 
     @Test
+    public void canAddPassengerToManifesto(){
+        flight.addPassenger(passenger);
+        flight.addPassenger(passenger);
+        assertEquals(2, flight.passengerManifestoSize());
+    }
+
+    @Test
     public void canCheckAvailableSeats(){
         assertEquals(350, flight.checkAvailableSeats(plane));
     }
