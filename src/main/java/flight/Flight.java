@@ -71,4 +71,6 @@ public class Flight {
     public void bookPassenger(Passenger passenger, Plane plane) {
         if (checkAvailableSeats(plane) >= 0) this.passengerManifesto.add(passenger);
     }
+
+
 }
