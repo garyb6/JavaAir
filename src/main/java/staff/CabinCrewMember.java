@@ -2,8 +2,8 @@ package staff;
 
 public class CabinCrewMember {
 
-    private String name;
-    private RankType rank;
+    protected String name;
+    protected RankType rank;
 
     public CabinCrewMember(String name, RankType rank) {
         this.name = name;
