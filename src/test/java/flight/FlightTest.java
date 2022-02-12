@@ -32,6 +32,7 @@ public class FlightTest {
         flight.addCrew(snrCrewMember);
         flight.addCrew(attendant1);
         flight.addCrew(attendant2);
+        passenger = new Passenger("Jack", 1);
     }
 
     @Test
@@ -67,5 +68,11 @@ public class FlightTest {
     @Test
     public void canCheckAvailableSeats(){
         assertEquals(350, flight.checkAvailableSeats(plane));
+    }
+
+    @Test
+    public void canBookPassenger(){
+        flight.bookPassenger(passenger, plane);
+        assertEquals(1, flight.passengerManifestoSize());
     }
 }
