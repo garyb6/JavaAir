@@ -63,4 +63,9 @@ public class FlightTest {
     public void passengerManifestoStartsEmpty(){
         assertEquals(0, flight.passengerManifestoSize());
     }
+
+    @Test
+    public void canCheckAvailableSeats(){
+        assertEquals(350, flight.checkAvailableSeats(plane));
+    }
 }

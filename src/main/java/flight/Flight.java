@@ -59,4 +59,8 @@ public class Flight {
     public int passengerManifestoSize() {
         return this.passengerManifesto.size();
     }
+
+    public int checkAvailableSeats(Plane plane) {
+        return plane.type.capacity - this.passengerManifesto.size();
+    }
 }

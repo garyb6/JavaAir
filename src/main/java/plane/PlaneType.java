@@ -6,7 +6,7 @@ public enum PlaneType {
 
 
 
-    private final int capacity;
+    public final int capacity;
     private final int weight;
 
     PlaneType(int capacity, int weight) {
