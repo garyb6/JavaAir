@@ -54,9 +54,11 @@ public class FlightTest {
         assertEquals("14:00", flight.getDepartureTime());
     }
 
+    @Test
+    public void canCheckCrewList(){
+        assertEquals(3, flight.checkCrewList());
+    }
 
-//    @Test
-//    public void hasPilot(){
-//        assertEquals(pilot, flight.getPilot());
-//    }
+    @Test
+    public void
 }

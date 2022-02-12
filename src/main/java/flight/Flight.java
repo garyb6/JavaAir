@@ -51,7 +51,9 @@ public class Flight {
         this.crewList.add(cabinCrewMember);
     }
 
-//    public Pilot getPilot() {
-//        return this.pilot;
-//    }
+    public int checkCrewList(){
+        return this.crewList.size();
+    }
+
+
 }
