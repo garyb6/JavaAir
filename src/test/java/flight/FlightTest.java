@@ -60,5 +60,7 @@ public class FlightTest {
     }
 
     @Test
-    public void
+    public void passengerManifestoStartsEmpty(){
+        assertEquals(0, flight.passengerManifestoSize());
+    }
 }

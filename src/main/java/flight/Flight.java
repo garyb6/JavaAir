@@ -56,4 +56,7 @@ public class Flight {
     }
 
 
+    public int passengerManifestoSize() {
+        return this.passengerManifesto.size();
+    }
 }
