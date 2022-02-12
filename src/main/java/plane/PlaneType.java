@@ -5,7 +5,6 @@ public enum PlaneType {
     AIRBUSA330(250, 5000);
 
 
-
     public final int capacity;
     public final int weight;
 
@@ -14,3 +13,4 @@ public enum PlaneType {
         this.weight = weight;
     }
 }
+

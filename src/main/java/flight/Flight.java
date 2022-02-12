@@ -4,7 +4,6 @@ import passenger.Passenger;
 import plane.Plane;
 import staff.CabinCrewMember;
 import staff.Pilot;
-import staff.RankType;
 
 import java.util.ArrayList;
 
@@ -71,6 +70,4 @@ public class Flight {
     public void bookPassenger(Passenger passenger, Plane plane) {
         if (checkAvailableSeats(plane) >= 0) this.passengerManifesto.add(passenger);
     }
-
-
 }

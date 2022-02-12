@@ -11,4 +11,12 @@ public class Plane {
     public PlaneType getType() {
         return this.type;
     }
+
+    public int getWeight(Plane plane){
+        return plane.type.weight;
+    }
+
+    public int getCapacity(Plane plane){
+        return plane.type.capacity;
+    }
 }
