@@ -39,6 +39,22 @@ public class FlightTest {
         assertEquals("OCA815", flight.getFlightNum());
     }
 
+    @Test
+    public void hasDestination(){
+        assertEquals("Lost", flight.getDestination());
+    }
+
+    @Test
+    public void hasDepartureAirport(){
+        assertEquals("LAX", flight.getDepartureAirport());
+    }
+
+    @Test
+    public void hasDepartureTime(){
+        assertEquals("14:00", flight.getDepartureTime());
+    }
+
+
 //    @Test
 //    public void hasPilot(){
 //        assertEquals(pilot, flight.getPilot());
