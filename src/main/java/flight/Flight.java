@@ -32,18 +32,26 @@ public class Flight {
     }
 
     public String getFlightNum() {
-        return flightNum;
+        return this.flightNum;
     }
 
     public String getDestination() {
-        return destination;
+        return this.destination;
     }
 
     public String getDepartureAirport() {
-        return departureAirport;
+        return this.departureAirport;
     }
 
     public String getDepartureTime() {
-        return departureTime;
+        return this.departureTime;
     }
+
+    public void addCrew(CabinCrewMember cabinCrewMember){
+        this.crewList.add(cabinCrewMember);
+    }
+
+//    public Pilot getPilot() {
+//        return this.pilot;
+//    }
 }
