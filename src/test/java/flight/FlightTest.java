@@ -74,12 +74,22 @@ public class FlightTest {
 
     @Test
     public void canCheckAvailableSeats(){
-        assertEquals(350, flight.checkAvailableSeats(plane));
+        assertEquals(3, flight.checkAvailableSeats(plane));
     }
 
     @Test
     public void canBookPassenger(){
         flight.bookPassenger(passenger, plane);
         assertEquals(1, flight.passengerManifestoSize());
+    }
+
+    @Test
+    public void canOnlyBookPassengerUpToCapacity(){
+        flight.addPassenger(passenger);
+        flight.addPassenger(passenger);
+        flight.addPassenger(passenger);
+        flight.bookPassenger(passenger, plane);
+
+        assertEquals(3, flight.passengerManifestoSize());
     }
 }
