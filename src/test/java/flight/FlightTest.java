@@ -89,7 +89,6 @@ public class FlightTest {
         flight.addPassenger(passenger);
         flight.addPassenger(passenger);
         flight.bookPassenger(passenger, plane);
-
         assertEquals(3, flight.passengerManifestoSize());
     }
 }
